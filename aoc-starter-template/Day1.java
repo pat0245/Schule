@@ -39,18 +39,18 @@ public class Day1 extends AoC2021 {
     }
     
     public int partTwo() {
+        
+        
         int count = 0;
         
         for (int index = 0; index < input.size(); index++) {
-            if (index == input.size() - 2) break;
+            if (index == input.size() - 1) break;
              
             int a = Integer.parseInt(input.get(index)[0]);
             int b = Integer.parseInt(input.get(index + 1)[0]); 
-            int c = Integer.parseInt(input.get(index + 2)[0]);
             
-            int d = a + b + c;
-            int e = d;
-            if (d < e)
+
+            if (a < b)
             {
                 count++;
             }       
